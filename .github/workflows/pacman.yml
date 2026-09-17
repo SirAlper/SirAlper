@@ -20,7 +20,7 @@ jobs:
       - uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: SirAlper
-          theme: dark
+          game: 'pacman, galaga'
 
       # Üretilen SVG'yi output branch'ine yükler
       - uses: crazy-max/ghaction-github-pages@v3.1.0
