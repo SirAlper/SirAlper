@@ -29,7 +29,9 @@
 <p align="center">
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SirAlper/SirAlper/output/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SirAlper/SirAlper/output/galaga-contribution-graph.svg">
-    <img alt="[game-name] contribution graph" src="https://raw.githubusercontent.com/SirAlper/SirAlper/output/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/SirAlper/SirAlper/output/pacman-contribution-graph-dark.svg">
+    <img alt="galaga contribution graph" src="https://raw.githubusercontent.com/SirAlper/SirAlper/output/galaga-contribution-graph-dark.svg">
+
 </p>
 
 ---
