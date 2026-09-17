@@ -1,0 +1,30 @@
+name: Generate Pacman Game
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Her gece otomatik güncellenir
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+
+      # Pac-Man SVG animasyonunu oluşturan resmi action
+      - uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: SirAlper
+
+      # Üretilen SVG'yi output branch'ine yükler
+      - uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
